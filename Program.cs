@@ -20,6 +20,8 @@
             obj.Add(67);
             obj.Display();
             obj.Size();
+            bool result = obj.IfExists(63, obj);
+            Console.WriteLine(result);
 
         }
     }
