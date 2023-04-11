@@ -19,8 +19,8 @@ namespace HashTableAndBinaryTree
             this.RightTree = null;
         }
 
-        int leftcount = 0;
-        int rightcount = 0;
+        int leftCount = 0;
+        int rightCount = 0;
 
         public void Add(T item)
         {
@@ -48,15 +48,21 @@ namespace HashTableAndBinaryTree
         {
             if (this.LeftTree != null)
             {
-                this.leftcount++;
+                this.leftCount++;
                 this.LeftTree.Display();
             }
             Console.WriteLine(this.Data.ToString());
             if (this.RightTree != null)
             {
-                this.rightcount++;
+                this.rightCount++;
                 this.RightTree.Display();
             }
+        }
+
+        //SIZE
+        public void Size()
+        {
+            Console.WriteLine("Size" + " " + (7 * (this.leftCount + this.rightCount) - 1));
         }
     }
 }
